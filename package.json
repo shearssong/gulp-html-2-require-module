@@ -1,0 +1,23 @@
+{
+  "name": "gulp-html-2-require-module",
+  "description": "压缩模版到js。requirejs所用。",
+  "version": "1.0.0",
+  "author": {
+    "name": "Shears",
+    "email": "mgwaqir@gmail.com"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "through2": "^0.6.3",
+    "html-minifier": "^0.7.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7"
+  }
+}
