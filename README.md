@@ -14,8 +14,9 @@
 >      gulp.task('default', function () {
 >        gulp.src(config.src + '/templates/*.html')
 >          .pipe(html2requireModule('tpls.js'))
--           .pipe(gulp.dest(config.src + '/js/common'));
+>           .pipe(gulp.dest(config.src + '/js/common'));
 >      });
+
 ###1.初始化插件###   
 
 
