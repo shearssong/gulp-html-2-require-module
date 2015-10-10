@@ -3,7 +3,6 @@
 var through = require('through2');
 var path = require('path');
 var gutil = require('gulp-util');
-var minify = require('html-minifier').minify;
 var PluginError = gutil.PluginError;
 var File = gutil.File;
 
@@ -30,9 +29,7 @@ module.exports = function(fileName) {
       return;
     }
 
-    var content = minify(file.contents.toString(), {
-      collapseWhitespace: true
-    });
+    var content = file.contents.toString().replace(/\n/g, ' ');
 
     // 设置最后修改时间。
     if (!latestMod || file.stat && file.stat.mtime > latestMod) {
