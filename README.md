@@ -1,11 +1,11 @@
-##用法##
+## 用法
 
-###1.初始化插件###   
+### 1.初始化插件
 
 
     npm install gulp-html-2-require-module
         
-###2.在gulpfile插件里调用###
+### 2.在gulpfile插件里调用
 
 
     var gulp = require('gulp');
@@ -23,9 +23,9 @@
     });
     
 
-##说明##
+## 说明
 > 需要传个参数fileName
 > 如html2requireModule('tpls.js')
 
-##last##
+## last
 > 工作顺利哈：）
